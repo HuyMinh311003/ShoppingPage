@@ -1,0 +1,78 @@
+.spacer {
+  flex: 1 1 auto;
+}
+
+.input_container {
+  margin-top: 20px;
+  padding-left: 10%;
+  width: 100%;
+}
+
+.input {
+  width: 250%;
+}
+
+td {
+  padding-right: 8px;
+}
+
+.item_container {
+  margin: 5px;
+  width: 270px;
+  max-width: 1000px;
+  background-color: plum;
+}
+
+#add_btn, #info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 50%;
+}
+
+#btn_container {
+  display: flex;
+  justify-content: center;
+}
+
+#add_btn {
+  height: 100%;
+  background-color: white;
+  color: black;
+  font-size: smaller;
+}
+
+#add_btn:hover {
+  background-color: rgb(249, 221, 243);
+}
+
+#content_container {
+  margin: 20px;
+}
+
+.books {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 50px 20px;
+}
+
+#toolbar {
+  height: 80px;
+}
+
+#type {
+  margin: 30px;
+  font-size: 30px;
+  color: purple;
+  font-weight: 500;
+}
+
+.button {
+  background-color: rgb(237, 236, 236);
+  margin: 10px;
+}
+
+#footer {
+  display: flex;
+  justify-content: center;
+}
