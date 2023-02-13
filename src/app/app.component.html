@@ -28,28 +28,30 @@
   <div id="type">THỂ LOẠI: LIGHT NOVEL</div>
   <div class="books">
     <mat-card class="item_container" *ngFor="let book of books">
-      <img mat-card-image src="{{book.image}}">
+      <div id="image_container">
+        <img id="image" mat-card-image src="{{book.image}}">
+      </div>
       <mat-card-content id="info">
-        <br>
         <p>Tên: {{book.name}}</p>
         <p>Giá: {{book.price}}</p>
         <p>NXB: {{book.publisher}}</p>
         <p *ngIf="book.outOfOrder == false">Tình trạng: Còn hàng</p>
         <p *ngIf="book.outOfOrder == true">Tình trạng: Hết hàng</p>
-        <br>
+        <hr>
       </mat-card-content>
       <mat-card-actions id="btn_container">
-        <button mat-button id="add_btn">MUA</button>
+        <button mat-button id="add_btn">CHO VÀO GIỎ HÀNG</button>
+        <button mat-button id="add_btn">ĐÁNH DẤU</button>
       </mat-card-actions>
     </mat-card>
   </div>
   <div id="footer">
     <div>
-      <button class="button" mat-stroked-button color="primary">1</button>
-      <button class="button" mat-stroked-button color="primary">2</button>
-      <button class="button" mat-stroked-button color="primary">3</button>
-      <button class="button" mat-stroked-button color="primary">...</button>
-      <button class="button" mat-stroked-button color="primary">20</button>
+      <button class="page_button" mat-stroked-button color="primary">1</button>
+      <button class="page_button" mat-stroked-button color="primary">2</button>
+      <button class="page_button" mat-stroked-button color="primary">3</button>
+      <button class="page_button" mat-stroked-button color="primary">...</button>
+      <button class="page_button" mat-stroked-button color="primary">20</button>
     </div>
   </div>
 </div>
