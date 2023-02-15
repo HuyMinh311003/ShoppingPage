@@ -7,8 +7,14 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatInputModule} from '@angular/material/input';
 import {MatCardModule} from '@angular/material/card';
 
+import { ItemCardComponent } from 'src/app/components/item-card/item-card.component';
+import { ItemCardCartComponent } from 'src/app/components/item-card-cart/item-card-cart.component';
+
 @NgModule({
-  declarations: [],
+  declarations: [
+    ItemCardComponent,
+    ItemCardCartComponent
+  ],
   imports: [
     CommonModule,
     MatToolbarModule,
@@ -18,6 +24,9 @@ import {MatCardModule} from '@angular/material/card';
     MatCardModule
   ],
   exports: [
+    ItemCardComponent,
+    ItemCardCartComponent,
+
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,

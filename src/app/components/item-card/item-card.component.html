@@ -11,7 +11,7 @@
     <br>
   </mat-card-content>
   <mat-card-actions id="btn_container">
-    <button *ngIf="item.outOfOrder == false" mat-button id="add_btn">CHO VÀO GIỎ HÀNG</button>
-    <button *ngIf="item.outOfOrder == true" mat-button id="add_btn" disabled>HẾT HÀNG</button>
+    <button *ngIf="item.outOfOrder == false" mat-button id="add_btn" (click)="addBook(item)">CHO VÀO GIỎ</button>
+    <p id="status" *ngIf="item.outOfOrder == true">HẾT HÀNG</p>
   </mat-card-actions>
 </mat-card>

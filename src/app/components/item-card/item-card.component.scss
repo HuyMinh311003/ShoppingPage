@@ -5,7 +5,7 @@
 
 #type_title {
   margin: 30px;
-  font-size: 30px;
+  font-size: 25px;
   color: purple;
   font-weight: 500;
 }
@@ -54,7 +54,6 @@
 }
 
 #add_btn {
-  height: 120%;
   width: 40%;
   font-weight: 500;
   background-color: white;
@@ -64,4 +63,8 @@
 
 #add_btn:hover {
   background-color: blueviolet;
+}
+
+#status {
+  margin: 10px
 }

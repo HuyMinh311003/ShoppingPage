@@ -1,0 +1,13 @@
+<div id="content">
+  <div id="type_title">THỂ LOẠI: LIGHT NOVEL</div>
+  <div class="item_container">
+    <app-item-card [item]="book" *ngFor="let book of books"></app-item-card>
+  </div>
+  <div id="footer">
+      <button class="page_button" mat-stroked-button color="primary">1</button>
+      <button class="page_button" mat-stroked-button color="primary">2</button>
+      <button class="page_button" mat-stroked-button color="primary">3</button>
+      <button class="page_button" mat-stroked-button color="primary">...</button>
+      <button class="page_button" mat-stroked-button color="primary">20</button>
+  </div>
+</div>

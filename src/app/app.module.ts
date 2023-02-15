@@ -5,20 +5,23 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { ItemCardComponent } from './components/item-card/item-card.component';
-import { ToolBarComponent } from './components/tool-bar/tool-bar.component';
+import { ToolbarComponent } from './components/toolbar/toolbar.component';
+
+import { RouterModule } from '@angular/router';
 
 import { SharedMaterialModule } from './modules/shared-material/shared-material.module';
+
 @NgModule({
   declarations: [
     AppComponent,
-    ItemCardComponent,
-    ToolBarComponent
+    ToolbarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    RouterModule,
+
     SharedMaterialModule
   ],
   providers: [],

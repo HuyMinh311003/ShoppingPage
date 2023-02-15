@@ -1,0 +1,23 @@
+#content {
+  margin: 30px;
+}
+
+#title {
+  margin: 10px;
+  font-size: 25px;
+  color: purple;
+  font-weight: 500;
+}
+
+#item_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 50px 20px;
+}
+
+#quantity {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+}
