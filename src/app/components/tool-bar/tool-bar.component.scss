@@ -1,0 +1,22 @@
+//Toolbar
+#toolbar {
+  height: 80px;
+}
+
+.input_container {
+  margin-top: 20px;
+  padding-left: 10%;
+  width: 100%;
+}
+
+.input {
+  width: 80%;
+}
+
+#login_btn, #signup_btn, .icon {
+  margin: 10px
+}
+
+#login_btn:hover, #signup_btn:hover, .icon:hover {
+  background-color: green;
+}

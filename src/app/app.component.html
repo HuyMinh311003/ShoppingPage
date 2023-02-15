@@ -1,49 +1,11 @@
-<div id = "toolbar_container">
-  <mat-toolbar id="toolbar" color="primary">
-    <button mat-icon-button class="icon" aria-label="">
-      <mat-icon>menu</mat-icon>
-    </button>
-    <span>RINKO MANGA LIGHT NOVEL SHOP</span>
-    <form class="input_container">
-      <td><mat-form-field class="input">
-        <mat-label>Tìm kiếm</mat-label>
-        <input matInput>
-      </mat-form-field></td>
-    </form>
-    <span class="spacer"></span>
-    <button mat-icon-button class="icon" aria-label="">
-      <mat-icon>shopping_cart</mat-icon>
-    </button>
-    <div>
-      <button mat-button>Đăng nhập</button>
-      <button mat-button>Đăng kí</button>
-    </div>
-    <button mat-icon-button class="icon" aria-label="">
-      <mat-icon>home</mat-icon>
-    </button>
-  </mat-toolbar>
+<div id="toolbar_container">
+  <app-tool-bar></app-tool-bar>
 </div>
 
-<div id="content_container">
-  <div id="type">THỂ LOẠI: LIGHT NOVEL</div>
-  <div class="books">
-    <mat-card class="item_container" *ngFor="let book of books">
-      <div id="image_container">
-        <img id="image" mat-card-image src="{{book.image}}">
-      </div>
-      <mat-card-content id="info">
-        <p>Tên: {{book.name}}</p>
-        <p>Giá: {{book.price}}</p>
-        <p>NXB: {{book.publisher}}</p>
-        <p *ngIf="book.outOfOrder == false">Tình trạng: Còn hàng</p>
-        <p *ngIf="book.outOfOrder == true">Tình trạng: Hết hàng</p>
-        <hr>
-      </mat-card-content>
-      <mat-card-actions id="btn_container">
-        <button mat-button id="add_btn">CHO VÀO GIỎ HÀNG</button>
-        <button mat-button id="add_btn">ĐÁNH DẤU</button>
-      </mat-card-actions>
-    </mat-card>
+<div id="content">
+  <div id="type_title">THỂ LOẠI: LIGHT NOVEL</div>
+  <div class="item_container">
+    <app-item-card [item]="book" *ngFor="let book of books"></app-item-card>
   </div>
   <div id="footer">
     <div>

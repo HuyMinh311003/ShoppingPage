@@ -1,0 +1,17 @@
+<mat-card class="card">
+  <div id="image_container">
+    <img id="image" mat-card-image src="{{item.image}}">
+  </div>
+  <mat-card-content id="info">
+    <p>Tên: {{item.name}}</p>
+    <p>Giá: {{item.price}}đ</p>
+    <p>Nhà cung cấp: {{item.publisher}}</p>
+    <p *ngIf="item.outOfOrder == false">Tình trạng: Còn hàng</p>
+    <p *ngIf="item.outOfOrder == true">Tình trạng: Hết hàng</p>
+    <br>
+  </mat-card-content>
+  <mat-card-actions id="btn_container">
+    <button *ngIf="item.outOfOrder == false" mat-button id="add_btn">CHO VÀO GIỎ HÀNG</button>
+    <button *ngIf="item.outOfOrder == true" mat-button id="add_btn" disabled>HẾT HÀNG</button>
+  </mat-card-actions>
+</mat-card>

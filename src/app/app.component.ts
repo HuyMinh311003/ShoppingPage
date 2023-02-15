@@ -7,10 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ShoppingPage';
-  books:Array<any> = [
+  books: Array<any> = [
     {
       id: 1,
-      name: "Sword Art Online: Progressive - Tập 1",
+      name: "Sword Art Online: Progressive - Tập 5",
       price: 120000,
       image:"../assets/SAO.jpg",
       publisher: "IPM",
@@ -42,7 +42,7 @@ export class AppComponent {
     },
     {
       id: 5,
-      name: "Thám tử đã chết - Tập 3",
+      name: "Thám tử đã chết - Tập 5",
       price: 100000,
       image:"../assets/thamtudachet.jpg",
       publisher: "Hikari Light Novel",
@@ -58,18 +58,18 @@ export class AppComponent {
     },
     {
       id: 7,
-      name: "Fate/Zero - Tập 2",
-      price: 125000,
-      image:"../assets/fate.jpg",
-      publisher: "IPM",
+      name: "Diệt slime suốt 300 năm tôi level max lúc nào chẳng hay - Tập 7",
+      price: 100000,
+      image:"../assets/slime.jpg",
+      publisher: "Tsuki Light Novel",
       outOfOrder: true
     },
     {
       id: 8,
       name: "Vì con gái tôi có thể đánh bại cả ma vương - Tập 4",
       price: 100000,
-      image:"../assets/vicongaitoidanhbaicamavuong.jpg",
-      publisher: "NXB Phụ Nữ",
+      image:"../assets/mavuong.jpg",
+      publisher: "Skybooks",
       outOfOrder: false
     },
     {
@@ -77,7 +77,7 @@ export class AppComponent {
       name: "Arya bàn bên thỉnh thoảng lại trêu ghẹo tôi bằng tiếng Nga - Tập 1",
       price: 120000,
       image:"../assets/arya.jpg",
-      publisher: "NXB Kim Đồng",
+      publisher: "Kim Đồng",
       outOfOrder: false
     },
     {
@@ -85,7 +85,7 @@ export class AppComponent {
       name: "Liệu có sai lầm khi tìm kiếm cuộc gặp gỡ định mệnh trong dungeon - Tập 5",
       price: 90000,
       image:"../assets/danmachi.jpg",
-      publisher: "NXB Kim Đồng",
+      publisher: "Kim Đồng",
       outOfOrder: true
     }
   ];

@@ -4,25 +4,22 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatToolbarModule} from '@angular/material/toolbar';
-import {MatIconModule} from '@angular/material/icon';
-import {MatButtonModule} from '@angular/material/button';
-import {MatInputModule} from '@angular/material/input';
-import {MatCardModule} from '@angular/material/card';
 
+import { ItemCardComponent } from './components/item-card/item-card.component';
+import { ToolBarComponent } from './components/tool-bar/tool-bar.component';
+
+import { SharedMaterialModule } from './modules/shared-material/shared-material.module';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ItemCardComponent,
+    ToolBarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatToolbarModule,
-    MatIconModule,
-    MatButtonModule,
-    MatInputModule,
-    MatCardModule
+    SharedMaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
