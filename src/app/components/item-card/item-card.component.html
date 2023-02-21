@@ -4,7 +4,7 @@
   </div>
   <mat-card-content id="info">
     <p>Tên: {{item.name}}</p>
-    <p>Giá: {{item.price}}đ</p>
+    <p>Giá: {{item.price | currency: "VND"}}</p>
     <p>Nhà cung cấp: {{item.publisher}}</p>
     <p *ngIf="item.outOfOrder == false">Tình trạng: Còn hàng</p>
     <p *ngIf="item.outOfOrder == true">Tình trạng: Hết hàng</p>

@@ -4,6 +4,7 @@
     <div *ngFor="let c of cart">
       <app-item-card-cart [item_cart] = "c.book" (addBookCallBack)="addBook($event)"></app-item-card-cart>
       <div id="quantity">Số lượng: {{c.quantity}}</div>
+      <div id="price">Tổng tiền: {{c.quantity * c.book.price | currency: "VND"}}</div>
     </div>
   </div>
 </div>
