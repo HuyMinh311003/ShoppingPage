@@ -10,4 +10,11 @@
     <p *ngIf="item_cart.outOfOrder == true">Tình trạng: Hết hàng</p>
     <br>
   </mat-card-content>
+  <mat-card-actions id="btn_container">
+    <button mat-button id="add_btn">XÓA</button>
+    <div id="quantity_btn">
+      <button mat-button class="btn">+</button>
+      <button mat-button class="btn">-</button>
+    </div>
+  </mat-card-actions>
 </mat-card>
